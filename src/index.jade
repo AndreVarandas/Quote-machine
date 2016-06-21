@@ -1,0 +1,29 @@
+doctype html
+
+head
+  link(href='https://fonts.googleapis.com/css?family=Niconne|Libre+Baskerville', rel='stylesheet')
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+  link(rel="stylesheet", href="styles.css", media="screen", title="no title", charset="utf-8") 
+    
+  script(src="https://code.jquery.com/jquery-3.0.0.min.js", charset="utf-8")
+
+body
+  h1.title Chuck Norris Quotes Machine
+  div.card.row
+    div.quote.col-xs-12
+      i.fa.fa-quote-left  
+      p(id='quote').quote Quotes will show here soon...
+         div.author
+            p - anonymous
+            hr
+    div.generate.col-xs-12
+      button(id='randomBtn').col-xs-4.col-xs-offset-2
+        i.fa.fa-arrow-right
+      a(id='tweet')  
+        button.col-xs-4
+          i.fa.fa-twitter
+footer
+  p Pen by andrevaradas
+  
+script(src="script.js", charset="utf-8")
