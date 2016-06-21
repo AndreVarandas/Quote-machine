@@ -11,7 +11,7 @@
     "scripts": "cp ./src/*.js ./dist",
     "styles:watch": "stylus --watch",
     "styles": "stylus ./src/*.styl --out ./dist",
-    "watch": "npm run html:watch & npm run scripts & npm run styles:watch",
+    "watch": "npm run scripts  & npm run html:watch & npm run styles:watch",
     "build": "npm run clean & npm run html && npm run scripts && npm run styles"
   },
   "repository": {

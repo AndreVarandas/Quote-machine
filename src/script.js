@@ -14,6 +14,6 @@ var api = 'http://api.icndb.com/jokes/random/';
         });
     }));
     var buildTweet = function (quote) {
-        tweet.attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent('"' + quote + '"')).attr('target', '_blank');
+        tweet.attr('href', 'https://twitter.com/intent/tweet?hashtags=ChuckNorrisQuotes&text=' + encodeURIComponent('"' + quote + '"')).attr('target', '_blank');
     };
 })();

@@ -27,4 +27,5 @@ declare var $;
     {
       tweet.attr('href', 'https://twitter.com/intent/tweet?hashtags=ChuckNorrisQuotes&text=' + encodeURIComponent('"' + quote + '"')).attr('target', '_blank');
     }
+
 })();
