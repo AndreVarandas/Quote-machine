@@ -41,3 +41,4 @@ dist
 
 #js files
 src/*.js
+src/*.html
