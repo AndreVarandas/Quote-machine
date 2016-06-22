@@ -6,12 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -r dist/*",
-    "html:watch": "jade src --watch",
-    "html": "jade src --out ./dist",
+    "html:watch": "jade ./src --watch --out ./dist",
+    "html": "jade ./src --out ./dist",
     "scripts": "cp ./src/*.js ./dist",
-    "styles:watch": "stylus --watch",
+    "styles:watch": "stylus ./src --watch --out ./dist",
     "styles": "stylus ./src/*.styl --out ./dist",
-    "watch": "npm run scripts  & npm run html:watch & npm run styles:watch",
+    "watch": "npm run scripts  && npm run html:watch & npm run styles:watch",
     "build": "npm run clean & npm run html && npm run scripts && npm run styles"
   },
   "repository": {
