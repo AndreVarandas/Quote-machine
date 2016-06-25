@@ -3,6 +3,8 @@
         "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
+        "outDir": "dist",
+        "rootDir": "src",
         "isolatedModules": false,
         "jsx": "react",
         "experimentalDecorators": true,

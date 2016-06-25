@@ -8,7 +8,7 @@ declare var $;
     let tweet = $('#tweet');
     let generateBtn = $('#randomBtn');
     let targetDiv = $('#quote');
-
+    
     $.getJSON(api, (result) => {
        targetDiv.html(result.value.joke);
        buildTweet(result.value.joke);
