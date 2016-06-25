@@ -8,11 +8,10 @@
     "clean": "rm -r dist/*",
     "html:watch": "jade ./src --watch --out ./dist",
     "html": "jade ./src --out ./dist",
-    "scripts": "cp ./src/*.js ./dist",
     "styles:watch": "stylus ./src --watch --out ./dist",
     "styles": "stylus ./src/*.styl --out ./dist",
-    "watch": "tsc --watch  & npm run html:watch & npm run styles:watch",
-    "build": "npm run clean & npm run html && npm run scripts && npm run styles"
+    "watch": "tsc --watch --sourcemap & npm run html:watch & npm run styles:watch",
+    "build": "npm run clean & npm run html && tsc ./src/script.ts --out ./dist/script.js && npm run styles"
   },
   "repository": {
     "type": "git",
